@@ -30,8 +30,6 @@ form = '''<!DOCTYPE html>
 </pre>
 '''
 
-class ThreadHTTPServer(ThreadingMixIn, http.server.HTTPServer):
-
 def CheckURI(uri, timeout=5):
     '''Check whether this URI is reachable, i.e. does it return a 200 OK?
     This function returns True if a GET request to uri returns a 200 OK, and
